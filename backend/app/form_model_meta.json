@@ -1,0 +1,15 @@
+{
+  "fixed_len": 32,
+  "in_feats": 99,
+  "min_frames": 10,
+  "labels": {
+    "0": "bad",
+    "1": "good"
+  },
+  "landmark_indices": {
+    "l_hip": 23,
+    "r_hip": 24,
+    "l_sho": 11,
+    "r_sho": 12
+  }
+}
