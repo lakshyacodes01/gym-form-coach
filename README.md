@@ -47,7 +47,7 @@ A deliberate design choice: only the **form judgment** is machine learning. Rep 
 
 ## Results & honest evaluation
 
-Trained on 133 self-recorded squat reps labeled good or bad.
+Trained on ~200 self-recorded squat reps labeled good or bad.
 
 On a random train/test split the model scored **100%** — which I treated as a red flag, not a success. Consecutive reps in a session are near-identical, so a random split leaks near-duplicate reps across train and test, and the model effectively recognizes reps it has already seen.
 
