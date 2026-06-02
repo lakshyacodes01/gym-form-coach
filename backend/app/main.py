@@ -18,9 +18,9 @@ def health():
 
 @app.post("/api/predict")
 def predict(rep: RepFrames):
-    from .model import predict as run_predict  # lazy: keeps torch out of health/CI
     if not rep.frames or len(rep.frames) < 2:
         return {"label": "unknown", "prob_good": None}
+    from .model import predict as run_predict  # lazy: keeps torch out of health/CI
     label, prob_good = run_predict(rep.frames)
     return {"label": label, "prob_good": round(prob_good, 3)}
 
